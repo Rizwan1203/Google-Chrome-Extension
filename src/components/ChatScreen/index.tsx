@@ -28,16 +28,16 @@ const ChatScreen: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-200">
+    <div className="flex flex-col min-h-screen bg-gray-200">
       <div
-        className="p-4 sticky top-0 bg-gray-200 hover:text-blue-800 cursor-pointer"
+        className="p-4 sticky top-0 bg-violet-200 hover:text-blue-800 cursor-pointer"
         onClick={() => navigate("/chat")}
         onKeyUp={() => null}
       >
         Back
       </div>
       <div className="flex-1 max-w-xs mx-auto pb-0 ">
-        <div className="flex flex-col overflow-y-auto p-6">
+        <div className="flex flex-col overflow-y-auto p-6 bg-gray-200">
           {messages.map((msg) => (
             <div
               key={msg.id}
